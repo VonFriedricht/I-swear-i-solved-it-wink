@@ -9,6 +9,13 @@
 
 (function() {
     'use strict';
-
-    // Your code here...
+    var title = document.getElementById("title")
+    var checkList = document.getElementById("checklist")
+    var victoryButton = document.createElement("button")
+    checkList.appendChild(victoryButton)
+    victoryButton.innerHTML = "just win"
+    function justWin(e){
+        console.log(title.innerHTML)
+    }
+    victoryButton.onclick = justWin
 })();
